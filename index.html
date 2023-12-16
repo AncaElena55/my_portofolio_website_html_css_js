@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3caa8e787.js" crossorigin="anonymous"></script>
+    <script src="./scriptIndex.js" defer></script>
+    <title>Portofolio</title>
+</head>
+<body>
+    <!-- Fixed Header --> 
+    <nav class="shadow">
+        <h1>Anca's Portofolio</h1>
+        <div class="lightbulbs-box">
+            <div class="lightbulb">
+                <img id="lightOne" src="./images/light.jpeg" alt="">
+                <p>Light</p>
+            </div>
+            <div class="lightbulb">
+                <img id="darkOne" src="./images/dark.jpeg" alt="">
+                <p>Dark</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="./index.html#about">ABOUT ME</a></li>
+            <li><a href="./index.html#projects">PROJECTS</a></li>
+            <li><a href="./index.html#skills">SKILLS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Main -->
+    <main>
+        <!-- About me Banner-->
+        <section id="about" class="shadow">
+            <h2>Hi! My name is Curtache Anca and I study at Codecademy to become the best front-end developer. 
+                Now that you got here, please take some time to check out some of my work and find out about my skills.</h2>
+            <img src="./images/ROUND-FACE_AGNES.jpg" alt="" class="shadow">
+        </section>
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="main-box">
+                <div class="project">
+                    <div class="visible shadow" id="change-one">
+                        <h3>TEA COZY</h3>
+                        <img src="./images/Tea Cozy.JPG" alt="">
+                    </div>
+                    <div class="hidden shadow" id="hidden-one">
+                        <h3>This is a website made after a design spec and it helped me to learn how to follow the instructions of a web designer. 
+                            It represents a fictional tea shop.</h3>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="visible shadow" id="change-two">
+                        <h3>COMPANY HOMEPAGE</h3>
+                        <img src="./images/company.JPG" alt="">
+                    </div>
+                    <div class="hidden shadow" id="hidden-two">
+                        <h3>In this website I built the layout for a company's homepage using flexbox. I chose a graphic design company, 
+                            so that I could also use some artistic ideas while practicing flexbox.</h3>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="visible shadow" id="change-three">
+                        <h3>BOOKCLUB</h3>
+                        <img src="./images/bookclub.JPG" alt="">
+                    </div>
+                    <div class="hidden shadow" id="hidden-three">
+                        <h3>This project was made with the purpose of using media queries and is a website for a special kind of book club, 
+                            one that also has a passion for food.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill-box">
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <i class="fab fa-js fa-3x"></i>
+                <i class="fab fa-git fa-3x"></i>
+                <i class="fab fa-chrome fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Curtache Anca. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

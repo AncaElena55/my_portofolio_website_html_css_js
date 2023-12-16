@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #87CEFA;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    min-height: 3.5rem;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-left: 1.25rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+.lightbulbs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lightbulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.lightbulb img {
+    width: 1.5rem;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-right: 1.25rem;
+    color: black;
+}
+
+li {
+    margin-left: 1.25rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 2rem 2rem;
+    background-image: url(./images/visax-P24NGnpfokw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
+    line-height: 1.5;
+    padding: 1.25rem 0;
+}
+
+#about h2 {
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+#about img {
+    margin: 1.25rem;
+    width: 10rem;
+    height: auto;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 1);
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4682B4;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
+    padding: 0.625rem;
+    margin: 1.25rem;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #4682B4;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
+    padding: 0.625rem ;
+    height: 12rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.visible img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 0.625rem;
+    margin: 0 0.625rem;
+}
+
+#skills {
+    margin-top: 1rem;
+}
+
+.skill-box i {
+    margin: 1.5rem 1rem;
+}
+
+#contact {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+    background-color: white;
+    margin: 6rem 2rem 2rem;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.8);
+    line-height: 1.5;
+}
+
+.contact-links i {
+    margin: 1.5rem 1rem;
+}
+
+section {
+    scroll-margin-top: 4rem;
+}
+
+footer p {
+    color: grey;
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-bottom: 0.625rem;
+}
+
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-footer {
+    margin-top: auto;
+    padding: 0.3rem;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+#contact h3 {
+    font-size: 2.375rem;
+}
+
+
+@media only screen and (max-width: 1052px) {
+    .hidden {
+        height: 17rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hidden {
+        height: 17rem;
+    }
+
+    .lightbulbs-box {
+        margin-right: 1.25rem;
+        margin-top: 1.35rem;
+    }
+
+    .lightbulb img {
+        width: 2rem;
+    }
+    
+    ul {
+        margin-bottom: 0.625rem;
+    }
+
+    #about, #contact {
+        margin-top: 9rem;
+    }
+
+    section 
+    {
+        scroll-margin-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 772px) {
+    .main-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .hidden {
+        height: 7rem;
+    }
+
+    .visible {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2, #contact h3 {
+        font-size: 1.75rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #about img {
+        width: 7rem;
+    }
+
+    .skill-box i {
+        font-size: 2rem;
+        margin: 1rem 0.625rem;
+    }
+
+    .contact-links i {
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+
+    section {
+        scroll-margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 526px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lightbulbs-box {
+        margin: 0 0 0.625rem;
+    }
+    
+    #about {
+        margin-top: 11rem;
+    }
+
+    #contact {
+        margin-top: 11rem;
+    }
+
+    #about {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #about h2 {
+        margin: 1.25rem 0;
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 0.625rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3, li, p {
+        font-size: 0.875rem;
+    }
+
+    .lightbulb img {
+        width: 1.5rem;
+    }
+
+   #contact h2 {
+        font-size: 1.75rem;
+   }
+
+   #contact h3 {
+        font-size: 1.5rem;
+   }
+
+   section {
+    scroll-margin-top: 9rem;
+   }
+}
+
+@media only screen and (max-width: 365px) {
+    ul {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    #about h2 {
+        margin: 0.625rem 0;
+    }
+
+    #about {
+        padding: 0.625rem;
+        margin-top: 13rem;
+    }
+
+    #about img {
+        margin: 0.625rem;
+    }
+
+    #contact {
+        margin-top: 13rem;
+    }
+
+    .skill-box i {
+        font-size: 1.5rem;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+   }
+
+   #contact h3 {
+        font-size: 1.25rem;
+   }
+
+   .contact-links i {
+        font-size: 2rem;
+        margin: 1rem 0.625rem;
+   }
+
+   section {
+    scroll-margin-top: 12rem;
+   }
+}
+
